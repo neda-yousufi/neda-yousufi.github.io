@@ -5,17 +5,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="3Rnv3ewKZcpqWcRaOipYlIQpJf82Dr6pAu94w9CaFHo" />
     
-    <title>Neda Yousufi | Computer Science Student & Quantum Computing Enthusiast</title>
-    <meta name="description" content="Official personal website of Neda Yousufi - Computer Science Student at UoPeople, Quantum Computing Enthusiast, and builder of smart lab equipment.">
+    <title>Neda Yousufi | CS Student, Quantum Computing Enthusiast & English Educator</title>
+    <meta name="description" content="Official personal website of Neda Yousufi - Computer Science Student at UoPeople, Quantum Computing Enthusiast, Scientific Researcher, and C1-certified English Teacher at EnGin with TTC certification.">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            width: 100%;
+            text-align: center;
+        }
+        .profile-img {
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+            margin-bottom: 18px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: var(--accent);
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+        .bio {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            max-width: 580px;
+            margin: 0 auto 28px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            text-decoration: none;
+            color: var(--text-main);
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            border-color: var(--accent);
+            background-color: rgba(56, 189, 248, 0.1);
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background-color: var(--accent);
+            color: #0f172a;
+            border: none;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            color: #ffffff;
+        }
+        .section-title {
+            text-align: left;
+            font-size: 1.15rem;
+            margin: 32px 0 16px;
+            color: var(--text-main);
+            border-bottom: 1px solid #334155;
+            padding-bottom: 8px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            text-align: left;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 20px;
+            transition: border-color 0.2s ease;
+        }
+        .card:hover {
+            border-color: var(--accent);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card h3 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+        .date-badge {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            background-color: rgba(56, 189, 248, 0.15);
+            color: var(--accent);
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-right: 6px;
+            margin-top: 4px;
+        }
+        footer {
+            margin-top: 45px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
 </head>
 <body>
-    <img src="neda_yousufi.jpg" alt="Neda Yousufi" width="150" style="border-radius: 50%;">
-    <h1>Neda Yousufi</h1>
-    <p>Computer Science Student at UoPeople | Quantum Computing Enthusiast | Building smart lab equipment</p>
-    
-    <div>
-        <a href="https://github.com" target="_blank">GitHub</a> | 
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <div class="container">
+        <img src="neda_yousufi.jpg" alt="Neda Yousufi" class="profile-img">
+        <h1>Neda Yousufi</h1>
+        <p class="subtitle">CS Student at UoPeople • Quantum Computing Enthusiast • C1 English Educator</p>
+        <p class="bio">
+            Computer Science student with a strong foundation in mathematics, scientific writing, and hardware prototyping. Teaching English since age 15 with TTC certification and C1 proficiency.
+        </p>
+
+        <div class="links">
+            <a href="https://linkedin.com" target="_blank" class="btn btn-primary">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="btn">GitHub</a>
+            <a href="mailto:nedayousufi842@gmail.com" class="btn">Email Me</a>
+        </div>
+
+        <h2 class="section-title">Teaching & Academic Experience</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>English Teacher at EnGin</h3>
+                    <span class="date-badge">9 Months • Present</span>
+                </div>
+                <p>Conducting interactive English sessions, helping learners build fluency and communication skills. Certified with TTC (Teacher Training Course) and C1 English proficiency, with continuous teaching experience starting at age 15.</p>
+                <span class="tag">C1 Level</span>
+                <span class="tag">TTC Certified</span>
+                <span class="tag">ESL Instruction</span>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Scientific Writing & Mathematics</h3>
+                    <span class="date-badge">Research & Academia</span>
+                </div>
+                <p>Authoring scientific papers and technical articles, backed by strong analytical and mathematical problem-solving skills applied to computer science and quantum concepts.</p>
+                <span class="tag">Scientific Papers</span>
+                <span class="tag">Mathematics</span>
+                <span class="tag">Technical Writing</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Technical Projects & Focus Areas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Smart Lab Equipment</h3>
+                <p>Designing and building automated, intelligent laboratory tools combining sensors, microcontrollers, and clean software interfaces.</p>
+                <span class="tag">Hardware</span>
+                <span class="tag">IoT</span>
+                <span class="tag">Embedded Systems</span>
+            </div>
+
+            <div class="card">
+                <h3>Learning Electronics & Arduino</h3>
+                <p>Hands-on circuit design, microcontroller programming, and C++ experiments documented from scratch on GitHub.</p>
+                <span class="tag">C++</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">Electronics</span>
+            </div>
+
+            <div class="card">
+                <h3>Quantum Computing & Computer Science</h3>
+                <p>Pursuing a Bachelor's in Computer Science at University of the People while researching quantum algorithms and future computing paradigms.</p>
+                <span class="tag">Computer Science</span>
+                <span class="tag">Quantum Computing</span>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 Neda Yousufi • Built with GitHub Pages
+        </footer>
     </div>
 </body>
 </html>
